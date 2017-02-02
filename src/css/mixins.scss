@@ -49,9 +49,10 @@
   -ms-overflow-style: none;
 
   // Edge
-  @supports (-ms-overflow-style: none) {
-    overflow: auto !important;
-  }
+  // This breaks cloudflare autominify
+  //@supports (-ms-overflow-style: none) {
+  //  overflow: auto !important;
+  //}
   // IE10+
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     overflow: auto !important;
